@@ -1,0 +1,24 @@
+{
+  "model_version": "v1",
+  "data_file": "data\\processed\\generation_de_hourly.csv",
+  "train_end": "2025-12-24 23:00:00+00:00",
+  "test_start": "2025-12-25 00:00:00+00:00",
+  "test_end": "2025-12-31 23:00:00+00:00",
+  "mae_model": 31050.327374375513,
+  "mae_baseline": 67182.2333677381,
+  "improvement_pct": 53.781936357468076,
+  "features": [
+    "lag_1",
+    "lag_24",
+    "lag_168",
+    "roll_mean_24",
+    "roll_mean_168",
+    "roll_std_24",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month"
+  ],
+  "notes": "HGBR on lag + rolling + calendar features. Frequency hourly."
+}
